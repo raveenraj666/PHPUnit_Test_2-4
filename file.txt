@@ -1,2 +1,6 @@
 hello
+<<<<<<< HEAD
 thankks
+=======
+hi
+>>>>>>> 03c73df52251b6aa8333857b3c70782a7a73a20b
