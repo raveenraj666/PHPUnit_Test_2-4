@@ -37,10 +37,7 @@ class FunctionTest extends TestCase
         $this->assertDirectoryExists('/home/iot-1/Desktop/project/login/project/atoum/tests');
 	}
 	
-	public function testFailure3()
-    {
-        $this->assertDirectoryIsWritable('/home/iot-1/Desktop/project/login/project/atoum/tests');
-	}
+	
 	
 	public function testFail4ure()
     {
@@ -52,10 +49,7 @@ class FunctionTest extends TestCase
         $this->assertFileIsReadable('/home/iot-1/Desktop/project/login/project/atoum/tests/FunctionTest.php');
 	}
 
-	public function testFailure5()
-    {
-        $this->assertFileIsWritable('/home/iot-1/Desktop/project/login/project/atoum/tests/FunctionTest.php');
-	}
+	
 	
 	public function test5Failure()
     {
