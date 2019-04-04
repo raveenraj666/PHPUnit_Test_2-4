@@ -1,15 +1,19 @@
 <?php 
 
 use PHPUnit\Framework\TestCase;
-include_once 'Function2.php';
 
-class FunctionTest2 extends TestCase
+class MyTestCase extends TestCase
 {
+    protected $instance;
 
-	public function testMultiply()
-	{
-		$this->assertEquals(12, multiply(6,2));
-	}
+    public function setUp()
+    {
+        $this->instance = new MyClass();
+    }
+
+    public function testSetValueRefusesBadInput()
+    {
+        $this->expectException(RuntimeException::class);
+        $this->instance->setValue('baz');
+    }
 }
-?>
-

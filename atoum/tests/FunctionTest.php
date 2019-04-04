@@ -1,11 +1,11 @@
 <?php 
 
 use PHPUnit\Framework\TestCase;
-require 'Function2.php';
+require 'Function.php';
 
 class FunctionTest extends TestCase
 {
-	
+
 	public function testAdd()
 	{		
 		$this->assertEquals(0,add(-2,2));
@@ -31,12 +31,10 @@ class FunctionTest extends TestCase
         $this->assertCount(2, ['foo','foo']);
 	}
 	
-	
 	public function testFailuree()
     {
         $this->assertDirectoryExists('/home/iot-1/Desktop/project/login/project/atoum/tests');
 	}
-	
 	
 	
 	public function testFail4ure()
@@ -50,12 +48,6 @@ class FunctionTest extends TestCase
 	}
 
 	
-	
-	public function test5Failure()
-    {
-        $this->assertInfinite(INF);
 	}
-	
-}
 ?>
 

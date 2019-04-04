@@ -1,27 +1,17 @@
 <?php
 
-function add($a,$b)
+class MyClass
 {
-	return $a+$b ;	
-}
+    protected $value;
 
-function substrac($a,$b)
-{
-	return $a-$b;
+    public function setValue($value)
+    {
+        if (in_array($value, ['foo', 'bar'])) {
+            $this->value = $value;
+            return $this;
+        }
+
+        throw new RuntimeException("{$value} is not a valid value.");
+    }
 }
-function multiply($a,$b)
-{
-	return  $a*$b ;	
-}
-function divide($a,$b)
-{
-		if($b == 0) 
-		{
-			throw new Exception("Division by '0' is not possible");		
-		}			
-		return $a / $b;		
-}
-	
 ?>
-
-	
