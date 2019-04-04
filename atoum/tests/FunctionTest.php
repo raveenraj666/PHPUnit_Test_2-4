@@ -20,6 +20,11 @@ class FunctionTest extends TestCase
 	{
 		$this->assertEquals(12, multiply(6,2));
 	}
+
+	public function testMultiply2()
+	{
+		$this->assertEquals(12, multiply(6,2));
+	}
 	
 	public function testDivide()
 	{
@@ -36,16 +41,12 @@ class FunctionTest extends TestCase
         $this->assertDirectoryExists('/home/iot-1/Desktop/project/login/project/atoum/tests');
 	}
 	
-	
 	public function testFail4ure()
     {
 		$this->assertNotEmpty(["Raj"]);
 	}
 
-	public function testFailure4()
-    {
-        $this->assertFileIsReadable('/home/iot-1/Desktop/project/login/project/atoum/tests/FunctionTest.php');
-	}
+	
 
 	
 	}
